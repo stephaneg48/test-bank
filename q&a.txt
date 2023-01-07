@@ -1,0 +1,84 @@
+Write a function named doubleIt() that takes in a number and returns twice the amount.
+
+def doubleIt(n):
+	return n*2
+
+Write a function named plusTen() that takes in a number and adds 10 to it. However it MUST use a for loop.
+
+def plusTen(n):
+	res = n
+	for i in range(10):
+		res += 1
+	return res
+
+Write a function named minusFive() that takes a number and subtracts it by 1 five times. It must use a while loop. 
+
+def minusFive(n):
+	res = n
+	while res != (n - 5):
+		res -= 1
+	return res
+
+Write a function divisibleByFive() to check whether a number is divisible by 5 or not. If it is divisible by 5 print 1. If not, print 0.
+
+def divisibleByFive(n):
+	if n % 5 == 0:
+		return 1
+	else:
+		return 0
+
+Write a function called findLength() to find the length of a string.
+
+def findLength(s):
+	return len(s)
+
+Write a function named plusFive() that takes in a number and adds 5 to it. However it MUST use a for loop.
+
+def plusFive(n):
+	res = n
+	for i in range(5):
+		res += 1
+	return res
+
+Write a function tripleIt() that takes one parameter n and returns three times that number.
+
+def tripleIt(n):
+	return n*3
+
+Write a function called quadrupleIt() that takes in a number and returns four times the amount.
+
+def quadrupleIt(n):
+	return n*4
+
+Write a function named divideFive() that takes in a number that is a multiple of five and divides by five recursively until 1 is returned. You must use recursion.
+
+def divideFive(n):
+	if n % 5 == 0:
+		return 1
+	else:
+		res = n / 5
+		divideFive(res)
+
+Write a function named operation() that takes three arguments op, a & b and returns the result of the two numbers corresponding to the operation.
+
+def operation(op,a,b):
+	if op == "+":
+		return a + b
+	if op == "-":
+		return a - b
+	if op == "*":
+		return a * b
+	if op == "/":
+		return a / b
+
+Write a function named factorial() that takes in a number and returns its factorial. You MUST use recursion.
+
+def factorial(n):
+	if n == 0:
+		return 1
+	else:
+		return n*factorial(n-1)
+
+Constraints test:
+10, 20, 10, 30, 30 pts respectively
+get everything right except function names for #3 and #5

@@ -1,0 +1,21 @@
+
+  .left,.right{
+    height:170vh;
+    width:100%;
+  }
+  .left{
+    background-color:#ffffff;
+    color : #0a0a0a;
+  }
+  .right{
+    background-color:#ffffff;
+    color : #0a0a0a;
+  }
+  @media (max-width: 790px) { 
+    .left{
+      height:100%
+    }
+    .right{
+      height:100%
+    }
+  }

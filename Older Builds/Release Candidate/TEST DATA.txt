@@ -1,0 +1,81 @@
+$student_exam_results = array( // TEST DATA
+    'examName' => "AutoTest",
+    'autograde' => array(
+        'constraint_check' => [
+            [
+                'comment' => "Student has included for loop",
+                'points_received' => 5
+            ],
+            [
+                'comment' => 'Student performs recursion',
+                'points_received' => 5
+            ]
+        ],
+        'name_check' => [ // yellow brackets: arrays for test cases for each question
+            [
+                'comment' => 'Student has correct function name',
+                'points_received' => 5
+            ],
+            [
+                'comment' => 'Student has correct function name',
+                'points_received' => 5
+            ]
+        ],
+        'question_ids' => [740, 742],
+        'questions' => [
+            'Write a function named plusTwelve() that takes in a number and adds 12 to it. However it MUST use a for loop.',
+            'Write a function named divideFive() that takes in a number that is a multiple of five and divides by five recursively until 1 is returned. You Must use recursion.'
+        ],
+        'test_case_r' => [ // yellow brackets: arrays for test cases for each question
+            [
+                [
+                    'case_1' => 0,
+                    'comments' => 'Test case 1 failed. The input: plusTwelve(2) had expected output: 14 but there was an error in code'
+                ],
+                [
+                    'case_2' => 0,
+                    'comments' => 'Test case 2 failed. The input: plusTwelve(8) had expected output: 20 but there was an error in code'
+                ],
+                [
+                    'case_3' => 0,
+                    'comments' => 'Test case 3 failed. The input: plusTwelve(5) had expected output: 17 but there was an error in code'
+                ],
+                [
+                    'case_4' => 0,
+                    'comments' => 'Test case 4 failed. The input: plusTwelve(20) had expected output: 32 but there was an error in code'
+                ]
+            ],
+            [
+                [
+                    'case_1' => 16.67,
+                    'comments' => 'Test case 1 passed with input: divideFive(25) and output: 1'
+                ],
+                [
+                    'case_2' => 16.67,
+                    'comments' => 'Test case 2 passed with input: divideFive(125) and output: 1'
+                ],
+                [
+                    'case_3' => 16.67,
+                    'comments' => 'Test case 3 passed with input: divideFive(625) and output: 1'
+                ]
+            ]
+        ],
+
+        'total_perQ' => [10, 60.01]
+    ),
+
+    'edit_results' => array(
+        'comments_edit' => ['this is bad', 'this is good'],
+        'nameEdit' => [5,5],
+        'constraintEdit' => [5,5],
+        'test1_edit' => [1,16.67],
+        'test2_edit' => [2,16.67],
+        'test3_edit' => [3,16.67],
+        'test4_edit' => [4],
+        'test5_edit' => [],
+        'total_perQ_edit' => [20,60.01]
+        
+    ),
+
+    'examTotal' => 80.01
+);
