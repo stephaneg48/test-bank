@@ -2,7 +2,8 @@
 
 // fixed 1/7/23
 
-$ini = @parse_ini_file(".env");
+$ini = @parse_ini_file("lib/.env");
+
 if($ini && isset($ini["DB_URL"])){
     //load local .env file
     $db_url = parse_url($ini["DB_URL"]);
@@ -16,6 +17,7 @@ $db_host = $db_url["host"]; // server hosting database
 $db_user = $db_url["user"]; // name of user account
 $db_name = substr($db_url["path"],1); // name of database from user account
 $db_password = $db_url["pass"];
+
 
 $db = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 
