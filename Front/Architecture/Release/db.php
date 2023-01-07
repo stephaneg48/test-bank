@@ -12,7 +12,7 @@ if($ini && isset($ini["DB_URL"])){
 else{
     //load from heroku env variables
     $db_url     = parse_url(getenv("DB_URL"));
-    $db_url["path"] = ltrim($db_url["path"], "/");
+    $db_url["path"] = ltrim($db_url["path"], "/"); // must trim for heroku
 }
 
 $db_host = $db_url["host"]; // server hosting database
@@ -22,7 +22,7 @@ $db_password = $db_url["pass"];
 
 error_log("host: " . $db_host);
 
-/*
+
 $db = mysqli_connect($db_host, $db_user, $db_password, $db_name);
 
 if (mysqli_connect_errno())
@@ -37,7 +37,7 @@ else
 
 
 mysqli_select_db($db, $db_name); // makes db_name the default
-*/
+
 ?>
 
 
