@@ -26,6 +26,10 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error($db);
   exit();
 }
+else
+{
+  error_log("Successfully connected to database...");
+}
 
 mysqli_select_db($db, $db_name); // makes db_name the default
 

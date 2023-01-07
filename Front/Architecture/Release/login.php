@@ -14,7 +14,10 @@ $ucid="sn236";
 $password="volleyball"; 
 
 if(isset($decoded_data['ucid']))
+{
+    error_log("USER CREDENTIALS HAVE REACHED THE BACK");
     $ucid = $decoded_data['ucid'];
+}
 
 if(isset($decoded_data['password']))
     $password = $decoded_data['password'];
