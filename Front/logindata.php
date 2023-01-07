@@ -1,6 +1,6 @@
 <?php //print_r($_POST); 
 session_start();
-$send_url = "/../Middle/login_info.php";
+$send_url = "https://testbank-main.herokuapp.com/Architecture/Middle/login_info.php"; // simplest solution...
 
     $ch = curl_init($send_url);
     $data = array(
@@ -25,7 +25,7 @@ $send_url = "/../Middle/login_info.php";
     $value = "$value}";
 
     $response = json_decode($value, true);
-    error_log("response was: " . var_export($response, true));
+    //error_log("response was: " . var_export($response, true));
     if(isset($response['user_role'])){
         $role = $response['user_role'];
         if($role == 'Student'){
