@@ -9,7 +9,7 @@ if($ini && isset($ini["DB_URL"])){
 }
 else{
     //load from heroku env variables
-    $db_url      = parse_url(getenv("DB_URL"));
+    $db_url     = parse_url(getenv("DB_URL"));
 }
 
 $db_host = $db_url["host"]; // server hosting database
