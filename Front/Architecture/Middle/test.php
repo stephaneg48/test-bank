@@ -11,11 +11,11 @@
     echo "here";
     $data_decode = $data_decode["examSend"];
     $data_encode = json_encode($data_decode);
-    $URL="https://afsaccess4.njit.edu/~sag48/490/model/insert_exam.php";
+    $URL="https://testbank-main.herokuapp.com/Architecture/Release/insert_exam.php";
   }
   else //or view exam page
   {
-    $URL = "https://afsaccess4.njit.edu/~sag48/490/model/list_exams.php";
+    $URL = "https://testbank-main.herokuapp.com/Architecture/Release/list_exams.php";
   }
   $c = curl_init();
   curl_setopt($c, CURLOPT_URL, $URL);

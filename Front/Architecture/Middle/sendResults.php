@@ -8,11 +8,12 @@
     $data_decode = $data_decode["sendResults"];
     $data_encode = json_encode($data_decode);
     //print_r($data_decode);
-    $URL="https://afsaccess4.njit.edu/~sag48/490/model/insert_results.php";
+    $URL="https://testbank-main.herokuapp.com/Architecture/Release/insert_results.php";
+    
   }
   else //or view exam page
   {
-    $URL = "https://afsaccess4.njit.edu/~sag48/490/model/list_exams_to_grade.php";
+    $URL = "https://testbank-main.herokuapp.com/Architecture/Release/list_exams_to_grade.php";
   }
   $c = curl_init();
   curl_setopt($c, CURLOPT_URL, $URL);

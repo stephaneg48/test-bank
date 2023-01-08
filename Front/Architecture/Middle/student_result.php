@@ -23,17 +23,18 @@
     print_r($data_decode);
     $data_encode = json_encode($data_decode);
     //print_r($data_decode);
-    $URL="https://afsaccess4.njit.edu/~sag48/490/model/insert_scores.php";
+    $URL="https://testbank-main.herokuapp.com/Architecture/Release/insert_scores.php";
   }
   else if(array_key_exists("request_exam",$data_decode))
   {
     $data_decode = $data_decode["request_exam"];
     $data_encode = json_encode($data_decode);
-    $URL="https://afsaccess4.njit.edu/~sag48/490/model/list_student_grade.php";
+    $URL="https://testbank-main.herokuapp.com/Architecture/Release/list_student_grade.php";
+    
   }
   else //or view exam page with all the fully graded exams on student side
   {
-    $URL = "https://afsaccess4.njit.edu/~sag48/490/model/list_graded_exams.php";
+    $URL = "https://testbank-main.herokuapp.com/Architecture/Release/list_graded_exams.php";
   }
   
   $c = curl_init();

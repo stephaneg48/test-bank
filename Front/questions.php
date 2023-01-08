@@ -5,7 +5,7 @@
    $data_out = json_encode($data);
    // var_dump($data_out);
     $c = curl_init();
-    curl_setopt($c, CURLOPT_URL, "https://afsaccess4.njit.edu/~mjv43/CS490/Beta/create_q.php");
+    curl_setopt($c, CURLOPT_URL, "https://testbank-main.herokuapp.com/Architecture/Middle/create_q.php");
     curl_setopt($c, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
     curl_setopt($c, CURLOPT_POSTFIELDS, $data_out);
     curl_setopt($c, CURLOPT_RETURNTRANSFER, true);

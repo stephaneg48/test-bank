@@ -4,7 +4,8 @@
   //print_r($incoming_data);
   
   $c = curl_init();
-  curl_setopt($c, CURLOPT_URL, "https://afsaccess4.njit.edu/~sag48/490/model/list_answers.php");
+  curl_setopt($c, CURLOPT_URL, "https://testbank-main.herokuapp.com/Architecture/Release/list_answers.php");
+  
   curl_setopt($c, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
   curl_setopt($c, CURLOPT_POSTFIELDS, $incoming_data);
   curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
