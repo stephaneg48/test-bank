@@ -13,7 +13,7 @@
   );*/
   $incoming_data = file_get_contents('php://input',true);
   $data_decode = (array)json_decode($incoming_data);
-  error_log("just received: " . print_r($data_decode));
+  //print_r($data_decode);
   //print_r("here");
   $URL="";
   $data_encode="";
@@ -44,8 +44,7 @@
   curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
   $resp = curl_exec($c); 
   curl_close($c); 
-
-  error_log("just responded with: " . $resp);
+    
   echo $resp;
 
 ?>
