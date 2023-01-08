@@ -54,7 +54,7 @@ function getRubric(examName){
 	arr["exam_name"]=examName; 
   var tableData = '<h1 id="examName"></h1>';
 	var rubricReq = new XMLHttpRequest();
-	rubricReq.open("POST","../examRubric.php", true);
+	rubricReq.open("POST","examRubric.php", true);
   rubricReq.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     rubricReq.onreadystatechange = function()  {
         if (rubricReq.readyState == 4 && rubricReq.status == 200) {
@@ -314,7 +314,7 @@ function sendResults(){
     //console.log(editResults);
     
     var answerSend = new XMLHttpRequest();
-    answerSend.open("POST","../sendRubric.php", true);
+    answerSend.open("POST","sendRubric.php", true);
     answerSend.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     answerSend.onreadystatechange = function() 
     {

@@ -51,7 +51,7 @@ function getRubric(examName){
     req["request_exam"]=arr;
     var tableData = '<h1 id="examName"></h1>';
 	var rubricReq = new XMLHttpRequest();
-	rubricReq.open("POST","../sendRubric.php", true);
+	rubricReq.open("POST","sendRubric.php", true);
 
   rubricReq.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     rubricReq.onreadystatechange = function()  {

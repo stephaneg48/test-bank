@@ -68,7 +68,7 @@ window.onload = function()
 { 
    // var tableData="<th>Number</th><th>Points</th><th>Questions</th><th>Answer</th>";
     var qbank_req = new XMLHttpRequest();
-    qbank_req.open("POST","../exams.php", true);
+    qbank_req.open("POST","exams.php", true);
     qbank_req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     qbank_req.onreadystatechange = function() 
     {
@@ -209,7 +209,7 @@ function sendExamResults(){
     }
     outerArr["sendResults"]= answers;
     var answerSend = new XMLHttpRequest();
-    answerSend.open("POST","../sendExamResults.php", true);
+    answerSend.open("POST","sendExamResults.php", true);
     answerSend.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     answerSend.onreadystatechange = function() 
     {
