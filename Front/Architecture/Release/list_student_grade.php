@@ -1,7 +1,4 @@
 <?php
-
-use function PHPSTORM_META\map;
-
 require_once(__DIR__ . "/db.php");
 ?>
 
