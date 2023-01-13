@@ -31,14 +31,20 @@ CREATE TABLE IF NOT EXISTS  `UserRoles`
     UNIQUE KEY (`user_id`, `role_id`)
 )
 
-INSERT INTO Users (ucid, password)
-VALUES ('sn236', '$2y$10$7I.K/1BlX9htBcGQDgHN3e1S2TQvYsAJZtBSdVfrt0tlViabQcrba'); /* volleyball* */
+/*
+
+These credentials are invalid for the latest release.
 
 INSERT INTO Users (ucid, password)
-VALUES ('tt71', '$2y$10$4YE9ntcGkWzjZQWx/y9tK.6aKx5oWHcK.jsop/vPTre0TgYTCLGje'); /* soccer */
+VALUES ('sn236', '$2y$10$7I.K/1BlX9htBcGQDgHN3e1S2TQvYsAJZtBSdVfrt0tlViabQcrba'); -- volleyball
 
 INSERT INTO Users (ucid, password)
-VALUES ('pw92', '$2y$10$UrjarsagDJh3fAWiYPf0HeEfPOpcKL3ieb8Pse.eV.Ckos6WFVsvK'); /* tennis */
+VALUES ('tt71', '$2y$10$4YE9ntcGkWzjZQWx/y9tK.6aKx5oWHcK.jsop/vPTre0TgYTCLGje'); -- soccer
+
+INSERT INTO Users (ucid, password)
+VALUES ('pw92', '$2y$10$UrjarsagDJh3fAWiYPf0HeEfPOpcKL3ieb8Pse.eV.Ckos6WFVsvK'); -- tennis
+
+*/
 
 INSERT INTO Roles (id, rolename)
 VALUES ('1', 'Student')
@@ -55,6 +61,10 @@ VALUES ('1', '1')
 INSERT INTO UserRoles (user_id, role_id)
 VALUES ('3', '1')
 
+/*
+
+These credentials are invalid for the latest release.
+
 UPDATE Users 
 SET password='$2y$10$nUy69SThXDhIsafM/zuqv.GMWCLDIgGemGyTda/7axw4wFhmv8gQW'
 WHERE id=3
@@ -67,6 +77,7 @@ UPDATE Users
 SET password='$2y$10$ZowMZ9RwBHMutX5ZLMFeI.eupbTfbIPn8qjwZLCDaS9Qv1E.CPyEC'
 WHERE id=1
 
+*/
 
 ----------------------------------------------------------------
 
